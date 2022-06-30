@@ -142,6 +142,14 @@ nav,
   width: 30%;
 }
 
+nav {
+  flex-shrink: 0;
+}
+
+#logo {
+  flex-shrink: 1;
+}
+
 nav ul {
   display: flex;
   align-items: center;
@@ -998,6 +1006,7 @@ footer > div {
   }
   .social-links {
     width: 100%;
+    justify-content: center;
   }
 }
 

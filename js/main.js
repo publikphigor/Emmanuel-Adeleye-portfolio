@@ -60,3 +60,14 @@ themeToggleBtn.addEventListener("click", function () {
     setDarkTheme();
   }
 });
+
+rotatingCup.addEventListener("mouseover", changeColor);
+rotatingCup.addEventListener("mouseout", changeColor1);
+
+function changeColor() {
+  rotatingCup.querySelector("img").src = "assets/emma-1.png";
+}
+
+function changeColor1() {
+  rotatingCup.querySelector("img").src = "assets/emma.png";
+}
