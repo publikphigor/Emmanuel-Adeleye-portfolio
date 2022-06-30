@@ -628,7 +628,7 @@ nav li {
     width: 95%;
   }
   .tools-slider {
-    animation: 10s scrollingToolsMobile linear infinite;
+    animation: 15s scrollingToolsMobile linear infinite;
   }
   .tool {
     width: 60%;
@@ -822,7 +822,7 @@ nav li {
   justify-content: space-between;
   padding-block: 24px;
   gap: 24px;
-  animation: 10s scrollingCerts linear infinite;
+  animation: 15s scrollingCerts linear infinite;
 }
 .certs-slider:hover {
   animation-play-state: paused;
@@ -851,10 +851,10 @@ nav li {
     width: 95%;
   }
   .certs-slider {
-    animation: 10s scrollingCertsMobile linear infinite;
+    animation: 15s scrollingCertsMobile linear infinite;
   }
   .certificate {
-    width: 150%;
+    width: 170%;
     font-size: 20px;
   }
 }
@@ -1113,7 +1113,7 @@ footer :is(.footer-logo, .social-links) {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-400%);
+    transform: translateX(-480%);
   }
 }
 
@@ -1131,6 +1131,6 @@ footer :is(.footer-logo, .social-links) {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-450%);
+    transform: translateX(-510%);
   }
 }
