@@ -745,7 +745,8 @@ nav li {
     letter-spacing: 2px;
   }
   .project-type {
-    margin-left: 16px;
+    margin-left: 8px;
+    font-weight: 300;
   }
   .project-image {
     order: 1;
