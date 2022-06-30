@@ -1004,6 +1004,10 @@ footer {
   width: 50%;
 }
 
+.copyright a {
+  color: var(--brand-green);
+}
+
 footer :is(.footer-logo, .social-links) {
   width: 25%;
 }
