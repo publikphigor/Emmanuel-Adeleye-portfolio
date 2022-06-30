@@ -951,8 +951,13 @@ footer > div {
 }
 
 .footer-logo a {
-  font-size: 24px;
   font-family: "Nigante", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 @media screen and (max-width: 820px) {
