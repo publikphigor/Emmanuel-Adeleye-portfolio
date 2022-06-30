@@ -22,6 +22,7 @@ const rotatingCup = document.querySelector(".emma-image");
 const tagBefore = document.querySelector(".tag-before");
 const tagAfter = document.querySelector(".tag-after");
 const contactImage = document.querySelector(".contact-image");
+const projectImage = document.querySelector(".project-image.green-bg");
 
 function setDarkTheme() {
   root.style.setProperty("--background", "rgba(0,0,0, 0.99)");
@@ -35,6 +36,8 @@ function setDarkTheme() {
   tagAfter.classList.add("dark");
   contactImage.classList.remove("light");
   contactImage.classList.add("dark");
+  projectImage.classList.remove("light");
+  projectImage.classList.add("dark");
   themeToggleBtn.classList.toggle("dark");
 }
 
@@ -50,6 +53,8 @@ function setLightTheme() {
   tagAfter.classList.remove("dark");
   contactImage.classList.add("light");
   contactImage.classList.remove("dark");
+  projectImage.classList.add("light");
+  projectImage.classList.remove("dark");
   themeToggleBtn.classList.toggle("dark");
 }
 
