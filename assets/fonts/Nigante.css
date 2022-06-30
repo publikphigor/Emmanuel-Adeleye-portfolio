@@ -1,0 +1,12 @@
+/* Webfont: Nigante-Regular */
+@font-face {
+  font-family: "Nigante";
+  src: url("Nigante.eot"); /* IE9 Compat Modes */
+  src: url("Nigante.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/assets/fonts/Nigante.woff") format("woff"),
+    /* Modern Browsers */ url("/assets/fonts/Nigante.woff2") format("woff2"),
+    /* Modern Browsers */ url("/assets/fonts/Nigante.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}

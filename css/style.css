@@ -1,0 +1,609 @@
+/* General Styles */
+:root {
+  --brand-green: #9ff202;
+  --background: #ffffff;
+  --brand-pink: #ff02a9;
+  --brand-yellow: #f2da02;
+  --text-black: #000000;
+  --hr-line: #d9d9d9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sub-heading {
+  color: var(--text-black);
+  font-family: "Nigante", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star img {
+  width: 16px;
+  height: 16px;
+}
+
+.hr {
+  height: 1px;
+  background-color: var(--hr-line);
+  width: 80%;
+  flex-shrink: 2;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brand-green);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.social-links a:hover {
+  background-color: var(--brand-pink);
+}
+
+.social-links a img {
+  width: 20px;
+}
+
+.fix-padding {
+  padding-top: 100px;
+}
+
+/* ==== Main Styles ==== */
+body {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  background-color: var(--background);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 10%;
+}
+
+header a {
+  font-family: "Nigante", sans-serif;
+  font-weight: 400;
+}
+
+nav,
+#logo,
+.social-links {
+  width: 30%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+#logo a {
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero {
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 24px;
+  margin-bottom: 40px;
+  background: url("/assets/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: top center;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theme-toggle {
+  background-color: var(--brand-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  background-color: var(--text-black);
+}
+.theme-toggle img {
+  width: 24px;
+}
+
+.name {
+  color: var(--brand-green);
+  font-size: 64px;
+  font-family: "Nigante", sans-serif;
+  font-weight: 300;
+  margin: 32px 0 8px;
+  line-height: 1;
+}
+
+.tagline {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+  overflow: visible;
+}
+.tagline span {
+  position: relative;
+  overflow: visible;
+}
+.tagline .tag-after::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 24px;
+  right: 0;
+  transform: translateY(calc(100% + 10px));
+  background: url("/assets/illustrator.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+.tagline .tag-before::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 24px;
+  left: -90%;
+  transform: translateY(calc(100% + 20px));
+  background: url("/assets/ui.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me,
+.fav-quote {
+  height: 300px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.about-me {
+  justify-content: flex-start;
+}
+.fav-quote {
+  justify-content: flex-end;
+}
+
+.as-icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid var(--text-black);
+}
+
+.as-icon img {
+  display: block;
+  width: 24px;
+}
+
+.user-icon {
+  background-color: var(--brand-pink);
+  border-bottom-right-radius: 0;
+}
+
+.quote-icon {
+  background-color: var(--brand-green);
+  border-bottom-left-radius: 0;
+}
+
+.emma-image-inner {
+  width: 240px;
+  height: 240px;
+  margin-top: 40px;
+  border: 2px solid var(--text-black);
+  border-radius: 50%;
+  background-color: var(--brand-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.emma-image img {
+  width: 200px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.emma-image {
+  position: relative;
+}
+
+.emma-image::before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background: url("/assets/cup-1.svg");
+  background-size: contain;
+  z-index: 9;
+  left: -20px;
+  bottom: 20px;
+}
+
+.tools {
+  width: 80%;
+  margin: 0 auto 64px;
+}
+.fav-tools-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fav-tools-heading .sub-heading {
+  padding-left: 24px;
+  width: fit-content;
+  flex-shrink: 0;
+  justify-content: flex-end;
+}
+.tools-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 24px;
+}
+
+.tool {
+  width: 32%;
+  font-family: "Nigante", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.tool:not(:last-child) {
+  border-right: 1px solid var(--brand-green);
+}
+
+.tool-number {
+  color: var(--brand-green);
+}
+
+.projects-container {
+  width: 80%;
+  margin: 0 auto 64px;
+}
+
+.projects-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.projects-heading .sub-heading {
+  padding-right: 24px;
+  width: fit-content;
+  flex-shrink: 0;
+  justify-content: flex-end;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.project-info {
+  width: 40%;
+}
+.project-name {
+  font-size: 32px;
+  font-family: "Nigante", sans-serif;
+  letter-spacing: 3px;
+}
+.project-number {
+  color: var(--brand-green);
+  letter-spacing: normal;
+  font-size: 24px;
+}
+.project-type {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 18px;
+  margin-left: 24px;
+  letter-spacing: normal;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-weight: 700;
+  position: relative;
+  line-height: 1;
+  margin-top: 16px;
+}
+
+.project-link::after {
+  position: absolute;
+  content: "";
+  background: url("/assets/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 100%;
+  right: -60px;
+  top: 2px;
+  line-height: 1;
+}
+
+.project-image,
+.project-image img {
+  width: 300px;
+  height: 300px;
+}
+
+.project-image {
+  position: relative;
+  z-index: 2;
+}
+
+.project-image::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: var(--brand-yellow);
+  z-index: -1;
+}
+
+.certificates {
+  width: 80%;
+  overflow-x: hidden;
+  margin: 0 auto 64px;
+}
+.cert-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cert-heading .sub-heading {
+  padding-left: 24px;
+  width: fit-content;
+  flex-shrink: 0;
+  justify-content: flex-end;
+}
+.certs-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 24px;
+  width: max-content;
+  gap: 24px;
+}
+.certificate {
+  width: fit-content;
+  flex-basis: auto;
+  font-family: "Nigante", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  padding-right: 24px;
+}
+
+.certificate:not(:last-child) {
+  border-right: 1px solid var(--brand-green);
+}
+
+.cert-number {
+  color: var(--brand-green);
+}
+
+.contact {
+  width: 80%;
+  margin: 0 auto 64px;
+}
+.contact-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.contact-heading .sub-heading {
+  padding-right: 24px;
+  width: fit-content;
+  flex-shrink: 0;
+  justify-content: flex-end;
+}
+
+.contact-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cs-half {
+  width: 47.5%;
+}
+.contact-form {
+  width: 100%;
+}
+.contact-form :is(label, input, textarea) {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.contact-form :is(input, textarea) {
+  padding: 8px 8px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--hr-line);
+}
+
+.submit-container {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-form input[type="submit"] {
+  width: 100%;
+  background-color: var(--brand-green);
+  color: var(--text-black);
+  border: 2px solid var(--text-black);
+  padding: 12px;
+  font-size: 20px;
+  font-family: "Nigante", sans-serif;
+  font-weight: 400;
+}
+.submit-container::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 80%;
+  background-color: var(--brand-yellow);
+  top: 6px;
+  left: 6px;
+  z-index: -1;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-image {
+  width: 400px;
+  margin: auto;
+  height: 300px;
+  background-color: var(--brand-pink);
+  border: 2px solid var(--text-black);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+.contact-image img {
+  width: 200px;
+  transform: rotate(-20deg);
+}
+
+.contact-image::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 50px;
+  background: url("/assets/contact-arrow-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-image::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: url("/assets/contact-squueze-1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 80%;
+  left: -20px;
+  z-index: 9;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 2px solid var(--hr-line);
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > div {
+  width: 32%;
+}
+
+.footer-logo a {
+  font-size: 24px;
+  font-family: "Nigante", sans-serif;
+}

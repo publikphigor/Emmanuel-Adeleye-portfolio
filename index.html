@@ -19,30 +19,40 @@
       rel="stylesheet"
     />
 
+    <!-- ==== Nigante Font ==== -->
+    <link rel="stylesheet" href="assets/fonts/Nigante.css" />
+
     <!-- ==== Personal CSS ==== -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- ==== header ==== -->
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">3D Gallery</a></li>
-          <li><a href="#">Collaboration</a></li>
-          <li><a href="#">Download CV</a></li>
-        </ul>
-      </nav>
+      <div class="header-inner">
+        <nav>
+          <ul>
+            <li><a href="#">3D Gallery</a></li>
+            <li><a href="#">Collaboration</a></li>
+            <li><a href="#">Download CV</a></li>
+          </ul>
+        </nav>
 
-      <div id="logo">
-        <a href="#">Emmah UX</a>
-      </div>
+        <div id="logo">
+          <a href="#">
+            <span class="star"><img src="assets/star.svg" alt="Star" /></span>
+            Emmah UX
+          </a>
+        </div>
 
-      <div class="social-links">
-        <a href="#"><img src="assets/linkedin.svg" alt="" /></a>
-        <a href="#"><img src="assets/behance.svg" alt="" /></a>
-        <a href="#"><img src="assets/dribble.svg" alt="" /></a>
+        <div class="social-links">
+          <a href="#"><img src="assets/linkedin.svg" alt="" /></a>
+          <a href="#"><img src="assets/behance.svg" alt="" /></a>
+          <a href="#"><img src="assets/dribble.svg" alt="" /></a>
+        </div>
       </div>
     </header>
+
+    <div class="fix-padding"></div>
 
     <!-- ==== hero ==== -->
     <section class="hero">
@@ -51,7 +61,11 @@
           <img src="assets/theme-1.svg" alt="Theme toggle button." />
         </div>
         <h1 class="name">Emmanuel Adeleye</h1>
-        <p class="tagline">UI/UX Designer X 3D Illustrator</p>
+        <p class="tagline">
+          <span class="tag-before">UI/UX</span>
+          Designer X 3D
+          <span class="tag-after">Illustrator</span>
+        </p>
       </div>
 
       <div class="about-section">
@@ -69,15 +83,17 @@
         </div>
 
         <div class="emma-image">
-          <img src="assets/emma.png" alt="Emmanuel Adeleye" />
+          <div class="emma-image-inner">
+            <img src="assets/emma.png" alt="Emmanuel Adeleye" />
+          </div>
         </div>
 
-        <div class="about-me">
+        <div class="fav-quote">
           <div class="as-icon quote-icon">
             <img src="assets/quote.svg" alt="User icon." />
           </div>
           <div class="as-desc-container">
-            <h2 class="as-heading">Favorite Quotw</h2>
+            <h2 class="as-heading">Favorite Quote</h2>
             <p class="as-desc">
               Develop a passion for learning. If you do, you will never cease to
               grow.
@@ -90,8 +106,11 @@
     <!-- ==== Tools ==== -->
     <section class="tools" id="tools">
       <div class="fav-tools-heading">
-        <hr />
-        <h2 class="sub-heading">Favorite Tools</h2>
+        <div class="hr"></div>
+        <h2 class="sub-heading">
+          <span class="star"><img src="assets/star.svg" alt="Star" /></span>
+          Favorite Tools
+        </h2>
       </div>
 
       <div class="tools-slider">
@@ -119,8 +138,11 @@
 
     <section id="projects" class="projects-container">
       <div class="projects-heading">
-        <h2 class="sub-heading">Latest Projects</h2>
-        <hr />
+        <h2 class="sub-heading">
+          <span class="star"><img src="assets/star.svg" alt="Star" /></span>
+          Latest Projects
+        </h2>
+        <div class="hr"></div>
       </div>
 
       <div class="project-container">
@@ -183,10 +205,13 @@
 
     <section class="certificates">
       <div class="cert-heading">
-        <hr />
-        <h2 class="sub-heading">Certificates</h2>
+        <div class="hr"></div>
+        <h2 class="sub-heading">
+          <span class="star"><img src="assets/star.svg" alt="Star" /></span>
+          Certificates
+        </h2>
       </div>
-      <div class="cert-slider">
+      <div class="certs-slider">
         <h3 class="certificate">
           <span class="cert-number">01.</span>
           User Interface Design Essentials - UI/UX Desgn
@@ -206,27 +231,28 @@
 
     <section class="contact">
       <div class="contact-heading">
-        <h2 class="sub-heading">Certificates</h2>
-        <hr />
+        <h2 class="sub-heading">
+          <span class="star"><img src="assets/star.svg" alt="Star" /></span>
+          Get in Touch
+        </h2>
+        <div class="hr"></div>
       </div>
       <div class="contact-split">
         <div class="cs-half">
           <form action="" class="contact-form">
             <label for="name">Name</label>
             <input type="text" id="name" />
-            <label for="email">Name</label>
+            <label for="email">Email</label>
             <input type="email" id="email" />
-            <label for="message">Name</label>
-            <textarea id="message" cols="30" rows="10"></textarea>
-            <input type="submit" class="submit-btn" value="Send Now" />
+            <label for="message">Message</label>
+            <textarea id="message" cols="30" rows="4"></textarea>
+            <div class="submit-container">
+              <input type="submit" value="Send Now" />
+            </div>
           </form>
         </div>
-        <div class="cs-half">
+        <div class="cs-half image-container">
           <div class="contact-image">
-            <img
-              src="assets/contact-arrow.svg"
-              alt="Contact Emmanuel Adeleye"
-            />
             <img src="assets/gmail-logo.svg" alt="Gmail Logo" />
           </div>
         </div>
