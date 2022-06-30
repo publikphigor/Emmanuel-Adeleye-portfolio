@@ -24,6 +24,9 @@
 
     <!-- ==== Personal CSS ==== -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ====Script ==== -->
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <!-- ==== header ==== -->
@@ -52,6 +55,38 @@
       </div>
     </header>
 
+    <div class="mobile-header">
+      <div class="mobile-header-inner">
+        <div id="m-logo">
+          <a href="#">
+            <span class="star"><img src="assets/star.svg" alt="Star" /></span>
+            Emmah UX
+          </a>
+        </div>
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-navbar">
+      <div class="mobile-navbar-inner">
+        <ul>
+          <li><a href="#">3D Gallery</a></li>
+          <li><a href="#">Collaboration</a></li>
+          <li><a href="#">Download CV</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#"><img src="assets/linkedin.svg" alt="" /></a>
+          <a href="#"><img src="assets/behance.svg" alt="" /></a>
+          <a href="#"><img src="assets/dribble.svg" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+
     <div class="fix-padding"></div>
 
     <!-- ==== hero ==== -->
@@ -62,9 +97,9 @@
         </div>
         <h1 class="name">Emmanuel Adeleye</h1>
         <p class="tagline">
-          <span class="tag-before">UI/UX</span>
+          <span class="tag-before light">UI/UX</span>
           Designer X 3D
-          <span class="tag-after">Illustrator</span>
+          <span class="tag-after light">Illustrator</span>
         </p>
       </div>
 
@@ -82,7 +117,7 @@
           </div>
         </div>
 
-        <div class="emma-image">
+        <div class="emma-image light">
           <div class="emma-image-inner">
             <img src="assets/emma.png" alt="Emmanuel Adeleye" />
           </div>
@@ -164,6 +199,8 @@
         </div>
       </div>
 
+      <div class="hr"></div>
+
       <div class="project-container">
         <div class="project-image">
           <img src="assets/image-placeholder.png" alt="Project Image" />
@@ -182,6 +219,8 @@
           <a href="#" class="project-link">See Case Study</a>
         </div>
       </div>
+
+      <div class="hr"></div>
 
       <div class="project-container">
         <div class="project-info">
@@ -238,7 +277,7 @@
         <div class="hr"></div>
       </div>
       <div class="contact-split">
-        <div class="cs-half">
+        <div class="cs-half contact-form-container">
           <form action="" class="contact-form">
             <label for="name">Name</label>
             <input type="text" id="name" />
@@ -252,7 +291,7 @@
           </form>
         </div>
         <div class="cs-half image-container">
-          <div class="contact-image">
+          <div class="contact-image light">
             <img src="assets/gmail-logo.svg" alt="Gmail Logo" />
           </div>
         </div>
